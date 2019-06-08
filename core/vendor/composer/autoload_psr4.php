@@ -7,7 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'phpseclib\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
-    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/type-resolver/src', $vendorDir . '/phpdocumentor/reflection-docblock/src'),
+    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
     'XdgBaseDir\\' => array($vendorDir . '/dnoegel/php-xdg-base-dir/src'),
     'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
@@ -49,7 +49,6 @@ return array(
     'Facebook\\' => array($vendorDir . '/facebook/graph-sdk/src/Facebook'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
-    'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib/Doctrine/Common/Inflector'),
     'Cron\\' => array($vendorDir . '/mtdowling/cron-expression/src/Cron'),
     'Collective\\Html\\' => array($vendorDir . '/laravelcollective/html/src'),
     'ClassPreloader\\' => array($vendorDir . '/classpreloader/classpreloader/src'),
