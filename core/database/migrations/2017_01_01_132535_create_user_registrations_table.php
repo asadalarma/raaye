@@ -28,6 +28,6 @@ class CreateUserRegistrationsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('user_registrations');
+        Schema::dropIfExists('user_registrations');
     }
 }

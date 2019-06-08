@@ -32,6 +32,6 @@ class CreateHistoriesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('histories');
+        Schema::dropIfExists('histories');
     }
 }

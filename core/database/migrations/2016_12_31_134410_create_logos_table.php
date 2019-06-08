@@ -26,6 +26,6 @@ class CreateLogosTable extends Migration
      */
     public function down()
     {
-        Schema::drop('logos');
+        Schema::dropIfExists('logos');
     }
 }

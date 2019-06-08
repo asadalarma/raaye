@@ -27,6 +27,6 @@ class CreateMethodsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('methods');
+        Schema::dropIfExists('methods');
     }
 }

@@ -28,6 +28,6 @@ class CreateSlidersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('sliders');
+        Schema::dropIfExists('sliders');
     }
 }

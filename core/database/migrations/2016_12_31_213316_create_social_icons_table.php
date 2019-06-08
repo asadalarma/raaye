@@ -30,6 +30,6 @@ class CreateSocialIconsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('social_icons');
+        Schema::dropIfExists('social_icons');
     }
 }

@@ -27,6 +27,6 @@ class CreateAboutUsesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('about_uses');
+        Schema::dropIfExists('about_uses');
     }
 }

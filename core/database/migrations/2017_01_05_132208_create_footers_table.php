@@ -27,6 +27,6 @@ class CreateFootersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('footers');
+        Schema::dropIfExists('footers');
     }
 }

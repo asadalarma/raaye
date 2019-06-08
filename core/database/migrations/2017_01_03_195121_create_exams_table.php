@@ -31,6 +31,6 @@ class CreateExamsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('exams');
+        Schema::dropIfExists('exams');
     }
 }

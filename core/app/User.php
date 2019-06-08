@@ -10,6 +10,14 @@ class User extends Authenticatable
     protected $table = 'users';
 
     protected $guard = "user";
+
+    /**
+     * User Types
+     *
+     */
+    const ADMIN = 'admin';
+    const CUSTOMER    = 'customer';
+
     /**
      * The attributes that are mass assignable.
      *
