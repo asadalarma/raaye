@@ -359,10 +359,14 @@ class ComposerStaticInitf92fa53e2b862556fabc26ad42974be6
 
     public static $classMap = array (
         'AddTimeToSubcategory' => __DIR__ . '/../..' . '/database/migrations/2016_12_30_193903_add_time_to_subcategory.php',
+        'CitiesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CitiesTableSeeder.php',
+        'CountriesTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CountriesTableSeeder.php',
         'CreateAboutUsesTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_03_125601_create_about_uses_table.php',
         'CreateAnswersTable' => __DIR__ . '/../..' . '/database/migrations/2017_02_04_132723_create_answers_table.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_28_153738_create_categories_table.php',
+        'CreateCitiesTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_08_190222_create_cities_table.php',
         'CreateContactsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_01_090912_create_contacts_table.php',
+        'CreateCountriesTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_08_190208_create_countries_table.php',
         'CreateCurrenciesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_31_073901_create_currencies_table.php',
         'CreateExamsTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_03_195121_create_exams_table.php',
         'CreateFootersTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_05_132208_create_footers_table.php',
@@ -374,6 +378,7 @@ class ComposerStaticInitf92fa53e2b862556fabc26ad42974be6
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProductsTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_28_175414_create_products_table.php',
         'CreateQuestionsTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_29_164241_create_questions_table.php',
+        'CreateSettingsTable' => __DIR__ . '/../..' . '/database/migrations/2019_06_08_194018_create_settings_table.php',
         'CreateSlidersTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_31_150201_create_sliders_table.php',
         'CreateSocialIconsTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_31_213316_create_social_icons_table.php',
         'CreateSubCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_12_29_092131_create_sub_categories_table.php',
@@ -920,8 +925,10 @@ class ComposerStaticInitf92fa53e2b862556fabc26ad42974be6
         'SebastianBergmann\\RecursionContext\\Exception' => __DIR__ . '/..' . '/sebastian/recursion-context/src/Exception.php',
         'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => __DIR__ . '/..' . '/sebastian/recursion-context/src/InvalidArgumentException.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'SettingsTableSeeder' => __DIR__ . '/../..' . '/database/seeds/SettingsTableSeeder.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'UsersTableSeeder' => __DIR__ . '/../..' . '/database/seeds/UsersTableSeeder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

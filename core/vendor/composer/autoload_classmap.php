@@ -7,10 +7,14 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AddTimeToSubcategory' => $baseDir . '/database/migrations/2016_12_30_193903_add_time_to_subcategory.php',
+    'CitiesTableSeeder' => $baseDir . '/database/seeds/CitiesTableSeeder.php',
+    'CountriesTableSeeder' => $baseDir . '/database/seeds/CountriesTableSeeder.php',
     'CreateAboutUsesTable' => $baseDir . '/database/migrations/2017_01_03_125601_create_about_uses_table.php',
     'CreateAnswersTable' => $baseDir . '/database/migrations/2017_02_04_132723_create_answers_table.php',
     'CreateCategoriesTable' => $baseDir . '/database/migrations/2016_12_28_153738_create_categories_table.php',
+    'CreateCitiesTable' => $baseDir . '/database/migrations/2019_06_08_190222_create_cities_table.php',
     'CreateContactsTable' => $baseDir . '/database/migrations/2017_01_01_090912_create_contacts_table.php',
+    'CreateCountriesTable' => $baseDir . '/database/migrations/2019_06_08_190208_create_countries_table.php',
     'CreateCurrenciesTable' => $baseDir . '/database/migrations/2016_12_31_073901_create_currencies_table.php',
     'CreateExamsTable' => $baseDir . '/database/migrations/2017_01_03_195121_create_exams_table.php',
     'CreateFootersTable' => $baseDir . '/database/migrations/2017_01_05_132208_create_footers_table.php',
@@ -22,6 +26,7 @@ return array(
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateProductsTable' => $baseDir . '/database/migrations/2016_12_28_175414_create_products_table.php',
     'CreateQuestionsTable' => $baseDir . '/database/migrations/2016_12_29_164241_create_questions_table.php',
+    'CreateSettingsTable' => $baseDir . '/database/migrations/2019_06_08_194018_create_settings_table.php',
     'CreateSlidersTable' => $baseDir . '/database/migrations/2016_12_31_150201_create_sliders_table.php',
     'CreateSocialIconsTable' => $baseDir . '/database/migrations/2016_12_31_213316_create_social_icons_table.php',
     'CreateSubCategoriesTable' => $baseDir . '/database/migrations/2016_12_29_092131_create_sub_categories_table.php',
@@ -568,6 +573,8 @@ return array(
     'SebastianBergmann\\RecursionContext\\Exception' => $vendorDir . '/sebastian/recursion-context/src/Exception.php',
     'SebastianBergmann\\RecursionContext\\InvalidArgumentException' => $vendorDir . '/sebastian/recursion-context/src/InvalidArgumentException.php',
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
+    'SettingsTableSeeder' => $baseDir . '/database/seeds/SettingsTableSeeder.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'UsersTableSeeder' => $baseDir . '/database/seeds/UsersTableSeeder.php',
 );
