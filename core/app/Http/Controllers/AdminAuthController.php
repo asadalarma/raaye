@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-use Auth;
+use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class AdminAuthController extends Controller
 {
@@ -19,9 +19,10 @@ class AdminAuthController extends Controller
     public function postLogin(Request $request)
     {
 
-        if (Auth::guard('admin')->attempt([
+        if (Auth::guard('user')->attempt([
             'username' => $request->email,
             'password' => $request->password,
+            'type' => User::ADMIN
         ])
         ) {
 
@@ -33,10 +34,12 @@ class AdminAuthController extends Controller
        return redirect()->back();
     }
 
-    public function logout()
-    {
-        Auth::guard('admin')->logout();
+    public function logout(Request $request){
+        Auth::guard('user')->logout();
+        $request->session()->flush();
+        $request->session()->regenerate();
         session()->flash('message', 'Just Logged Out!');
+
         return redirect('/auth');
     }
 

@@ -54,8 +54,10 @@ Route::post('change-password', ['as' => 'change-password', 'uses' => 'ExamStartC
 Route::get('password_change', ['as' => 'password_form', 'uses' => 'PasswordChangeController@getChangePassword']);
 Route::post('password_change', ['as' => 'password_form', 'uses' => 'PasswordChangeController@postChangePassword']);
 
-// Dashboard Route List
-Route::get('/dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@getDashboard']);
+Route::group(['middleware' => ['auth:user']], function () {
+    // Dashboard Route List
+    Route::get('/dashboard', ['as' => 'dashboard', 'uses' => 'DashboardController@getDashboard']);
+});
 
 // Base Category Route List
 Route::resource('category', 'CategoryController');

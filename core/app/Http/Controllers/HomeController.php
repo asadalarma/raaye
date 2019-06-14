@@ -32,10 +32,10 @@ class HomeController extends Controller
         $data = [];
         $logo = Logo::first();
         $social = SocialIcon::first();
-        $contact = Contact::first();
-        $slider = Slider::all();
+       /* $contact = Contact::first();*/
+       /* $slider = Slider::all();*/
         $offer = Offer::first();
-        $sponsor = Partner::all();
+        /*$sponsor = Partner::all();*/
         $title = Title::first();
         $footer = Footer::first();
         $data['subcategory'] = SubCategory::all()->count();
@@ -45,10 +45,10 @@ class HomeController extends Controller
         $exam_category = SubCategory::orderBy('id', 'DESC')->get();
         return view('home.home',$data)
             ->withSocial($social)
-            ->withContact($contact)
-            ->withSliders($slider)
+            /*->withContact($contact)*/
+            /*->withSliders($slider)*/
             ->withOffer($offer)
-            ->withPartner($sponsor)
+            /*->withPartner($sponsor)*/
             ->withCategory($exam_category)
             ->withLogo($logo)
             ->withTitle($title)
