@@ -11,7 +11,7 @@
 
               <ul class="swiper-wrapper">
 
-                @foreach($sliders as $slider)
+               {{-- @foreach($sliders as $slider)--}}
 				<video class="hero-video" playsinline="" autoplay="" loop="">
 					  <source src="../extra-images/hero-desktop-en.mp4" type="video/mp4">
 					  <source src="../extra-images/hero-desktop-en.webm" type="video/webm">
@@ -25,7 +25,7 @@
 						</div>
                     </div>
 
-                @endforeach
+                {{--@endforeach--}}
 
             </ul>
         </div>
@@ -51,7 +51,7 @@
         <!--<section class="gt_wht_offer_bg">-->
         <!--    <div class="container">-->
         <!--        <div class="col-sm-12 col-xl-4 p-b-30 m-lr-auto">-->
-        <!--            <h3>{{ $offer->title }}</h3>-->
+        <!--            <h3>{{-- $offer->title --}}</h3>-->
         <!--            <hr>-->
         <!--            {{-- <span><img src="{{ asset('images/hdg-01.png') }}" alt=""></span> --}}-->
         <!--        </div>-->
@@ -59,7 +59,7 @@
         <!--        <div class="col-sm-12 col-xl-4 p-b-30 m-lr-auto">-->
         <!--            <div class="gt_wht_offer_wrap1">-->
         <!--                <div class="gt_wht_offer_des1">-->
-        <!--                    <p class="lead" style="font-size: 18px">{!! $offer->description  !!} </p>-->
+        <!--                    <p class="lead" style="font-size: 18px">{{-- $offer->description  --}} </p>-->
         <!--                </div>-->
         <!--            </div>-->
         <!--        </div>-->
@@ -73,7 +73,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-12 col-xl-4 p-b-30 m-lr-auto">
-                    <h2 style="font-family: open sans; text-align:center; font-weight:700;">{{ $offer->title }}</h2>
+                    <h2 style="font-family: open sans; text-align:center; font-weight:700;">{{ (isset($offer->title) ? $offer->title : null  ) }}</h2>
                     <hr style="margin-bottom:30px;">
                 </div>
               </div>

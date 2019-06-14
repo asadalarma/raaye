@@ -5,7 +5,7 @@
 <meta name="keywords" content="child,children,school,childcare,colorful">
 <meta name="author" content="2goodtheme">
 
-<title>{{ $title->title }} - @yield('title')</title>
+<title>{{ (isset($title->title) ? $title->title : null)  }} - @yield('title')</title>
 <link href="{{ asset('css/my-assets/reg/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ asset('css/my-assets/css/register-style.css') }}" rel="stylesheet">
 <!-- Swiper Slider CSS -->

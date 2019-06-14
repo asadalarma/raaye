@@ -22,7 +22,7 @@
     <div class="gt_top3_menu default_width">
         <div class="container">
             <div class="gt-logo">
-                <a href="{{ route('home') }}"><img src="{{ asset('core/public/images')}}/{{ $logo->name }}" alt="" style="max-width: 200px!important;"></a>
+                <a href="{{ route('home') }}"><img src="{{ asset('core/public/images')}}/{{ (isset($logo->name) ? $logo->name : null) }}" alt="" style="max-width: 200px!important;"></a>
             </div>
             <nav class="gt_hdr3_navigation" style="margin: 20px 0 0 0;">
                 <!-- Responsive Buttun -->
